@@ -1,0 +1,107 @@
+/* Body and global styling */
+body {
+    font-family: Arial, sans-serif;
+    padding: 30px;
+    background: linear-gradient(to bottom right, #e8f5e9, #ffffff);
+    color: #1b5e20;
+}
+
+.container {
+    display: flex;
+    justify-content: center;  
+    align-items: center;     
+    flex-direction: column;
+}
+
+.content-wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;  
+    width: 100%;
+}
+
+/* Headings */
+h1.page-title {
+    margin-bottom: 40px;
+    font-size: 2rem;
+    color: #2e7d32;
+    text-align: center;
+}
+
+/* Form styling */
+#todo-form {
+    margin-bottom: 20px;
+    display: flex;
+    flex-direction: column;
+    width: 80%;
+}
+
+label {
+    font-weight: bold;
+    margin-top: 10px;
+}
+
+input, textarea {
+    padding: 10px;
+    margin-top: 5px;
+    border: 1px solid #81c784;
+    border-radius: 6px;
+    font-size: 15px;
+}
+
+input:focus, textarea:focus {
+    border-color: #2e7d32;
+    outline: none;
+    box-shadow: 0 0 5px rgba(46,125,50,0.3);
+}
+
+/* Add Task button */
+#addTaskButton {
+    margin-top: 15px;
+    padding: 12px;
+    background-color: #43a047;
+    border: none;
+    color: white;
+    cursor: pointer;
+    font-size: 16px;
+    border-radius: 6px;
+    transition: all 0.3s ease;
+}
+
+#addTaskButton:hover {
+    background-color: #1b5e20;
+    transform: translateY(-2px);
+}
+
+/* Table styling */
+#todo-table {
+    width: 80%;
+    border-collapse: collapse;
+    margin-top: 20px;
+}
+
+#todo-table th, #todo-table td {
+    border: 2px solid #2e7d32;
+    padding: 10px;
+    text-align: center;
+}
+
+#todo-table th {
+    background-color: #a5d6a7;
+    color: #1b5e20;
+}
+
+/* Delete button */
+.remove-task-btn {
+    background-color: #388e3c;
+    color: white;
+    padding: 6px 10px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.remove-task-btn:hover {
+    background-color: #1b5e20;
+}
